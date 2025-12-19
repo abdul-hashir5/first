@@ -1,0 +1,123 @@
+body { 
+    background-color: antiquewhite;
+}
+
+#img1 {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    border: 5px solid orange;
+    position: fixed;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+}
+
+table {
+    background-color: blanchedalmond;
+    width: 500px;
+    height: 300px;
+    padding: 50px;
+    margin: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 18px 10px 5px gray, -10px 5px 6px green;
+
+}
+
+section {
+    border: 2px solid brown;
+    background-color: #555;
+    padding: 10px;
+    margin: 8px;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+
+}
+
+article:nth-child(2) {
+    align-self: flex-start;
+    order: 1;
+}
+
+@media (min-width: 900px) {
+    body {
+        background-color: #646896;
+    }
+}
+    
+@media (width > 1px) and (width < 700px) {
+    section {
+        display: block;
+        height: auto;
+    }
+}
+
+h1 {
+    text-shadow: 8px 6px 4px green;
+}
+
+.container {
+    height: 500px;
+    width: 900px;
+    background-color: gold;
+}
+
+.box {
+    height: 150px;
+    width: 200px;
+    border-radius: 1000px;
+    background-color: lightblue;
+    margin: 15px;
+    padding: 15px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation-name: bottomMovement;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+}
+
+@keyframes bottomMovement {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 300px;
+        left: 0px;
+        background-color: lightcyan;
+    }
+    50% {
+        top: 300px;
+        left: 600px;
+        background-color: lightcoral;
+    }
+    100% {
+        top: 0px;
+        left: 600px;
+        background-color: lightsalmon;    }
+}
